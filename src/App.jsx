@@ -61,7 +61,7 @@ function App() {
 
 const LegalRoute = ({ kind }) => {
   const LegalMod = lazy(() =>
-    import("@/pages/Legal").then((m) => ({
+    import("./pages/Legal").then((m) => ({
       default: kind === "privacy" ? m.Privacy : m.Terms,
     })),
   );
