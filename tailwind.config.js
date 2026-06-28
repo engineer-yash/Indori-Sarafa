@@ -1,3 +1,5 @@
+import tailwindcssAnimate from "tailwindcss-animate";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -33,11 +35,11 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        display: ['"Playfair Display"', "serif"],
+        display: ["Playfair Display", "serif"],
         body: ["Poppins", "system-ui", "sans-serif"],
         hindi: ['"Tiro Devanagari Hindi"', "serif"],
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 };
