@@ -3,8 +3,8 @@ import { toast } from "sonner";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiPhone, FiMapPin, FiSend } from "react-icons/fi";
-import SEO from "./components/SEO";
-import site from "./data/site";
+import SEO from "../components/SEO";
+import site from "../data/site";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });

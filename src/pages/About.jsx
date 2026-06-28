@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import SEO from "./components/SEO";
-import site from "./data/site";
+import SEO from "../components/SEO";
+import site from "../data/site";
 
 const timeline = [
   {

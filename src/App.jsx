@@ -1,18 +1,18 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "sonner";
-import "./App.css";
-import Layout from "./components/Layout";
-import ScrollToTop from "./components/ScrollToTop";
+import "@/App.css";
+import Layout from "@/components/Layout";
+import ScrollToTop from "@/components/ScrollToTop";
 
-const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
-const Menu = lazy(() => import("./pages/Menu"));
-const Gallery = lazy(() => import("./pages/Gallery"));
-const Branches = lazy(() => import("./pages/Branches"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Legal = lazy(() => import("./pages/Legal"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+const Home = lazy(() => import("@/pages/Home"));
+const About = lazy(() => import("@/pages/About"));
+const Menu = lazy(() => import("@/pages/Menu"));
+const Gallery = lazy(() => import("@/pages/Gallery"));
+const Branches = lazy(() => import("@/pages/Branches"));
+const Contact = lazy(() => import("@/pages/Contact"));
+const Legal = lazy(() => import("@/pages/Legal"));
+const NotFound = lazy(() => import("@/pages/NotFound"));
 
 const PageLoader = () => (
   <div className="min-h-screen grid place-items-center bg-[#FFF8F2]">
@@ -61,7 +61,7 @@ function App() {
 
 const LegalRoute = ({ kind }) => {
   const LegalMod = lazy(() =>
-    import("./pages/Legal").then((m) => ({
+    import("@/pages/Legal").then((m) => ({
       default: kind === "privacy" ? m.Privacy : m.Terms,
     })),
   );

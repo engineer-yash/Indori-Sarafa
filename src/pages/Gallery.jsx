@@ -3,9 +3,9 @@ import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import { motion } from "framer-motion";
-import SEO from "./components/SEO";
-import gallery from "./data/gallery";
-import site from "./data/site";
+import SEO from "../components/SEO";
+import gallery from "../data/gallery";
+import site from "../data/site";
 
 const GalleryPage = () => {
   const [index, setIndex] = useState(-1);

@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import site from "./data/site";
+import site from "../data/site";
 
 const SEO = ({
   title,
