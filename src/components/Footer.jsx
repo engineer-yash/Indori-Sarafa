@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { FiPhone, FiMapPin, FiClock } from "react-icons/fi";
 import Logo from "./Logo";
-import site from "../data/site";
-import branches from "../data/branches";
+import site from "./data/site";
+import branches from "./data/branches";
 
 const Footer = () => {
   return (

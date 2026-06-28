@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX, FiPhone } from "react-icons/fi";
 import Logo from "./Logo";
-import site from "../data/site";
+import site from "./data/site";
 
 const navItems = [
   { to: "/", label: "Home" },

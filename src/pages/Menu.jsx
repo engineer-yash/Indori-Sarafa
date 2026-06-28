@@ -1,10 +1,10 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { FiSearch, FiStar, FiX } from "react-icons/fi";
-import SEO from "../components/SEO";
-import MenuModal from "../components/MenuModal";
-import menu, { categories } from "../data/menu";
-import site from "../data/site";
+import SEO from "./components/SEO";
+import MenuModal from "./components/MenuModal";
+import menu, { categories } from "./data/menu";
+import site from "./data/site";
 
 const MenuPage = () => {
   const [query, setQuery] = useState("");
