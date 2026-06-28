@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" rx="24" fill="#5C2C06"/>
+  <!-- Dotted dome -->
+  <g fill="#D4AF37">
+    <circle cx="200" cy="60" r="6"/>
+    <circle cx="160" cy="68" r="5"/>
+    <circle cx="240" cy="68" r="5"/>
+    <circle cx="125" cy="85" r="6"/>
+    <circle cx="275" cy="85" r="6"/>
+    <circle cx="95" cy="110" r="5"/>
+    <circle cx="305" cy="110" r="5"/>
+    <circle cx="75" cy="145" r="5"/>
+    <circle cx="325" cy="145" r="5"/>
+    <circle cx="65" cy="185" r="5"/>
+    <circle cx="335" cy="185" r="5"/>
+    <rect x="140" y="78" width="9" height="9" transform="rotate(45 144 82)"/>
+    <rect x="251" y="78" width="9" height="9" transform="rotate(45 255 82)"/>
+    <rect x="105" y="100" width="9" height="9" transform="rotate(45 109 104)"/>
+    <rect x="285" y="100" width="9" height="9" transform="rotate(45 289 104)"/>
+    <rect x="82" y="125" width="9" height="9" transform="rotate(45 86 129)"/>
+    <rect x="310" y="125" width="9" height="9" transform="rotate(45 314 129)"/>
+    <rect x="70" y="160" width="9" height="9" transform="rotate(45 74 164)"/>
+    <rect x="322" y="160" width="9" height="9" transform="rotate(45 326 164)"/>
+  </g>
+  <!-- Sun rays -->
+  <g stroke="#D4AF37" stroke-width="2" stroke-linecap="round">
+    <line x1="200" y1="125" x2="200" y2="105"/>
+    <line x1="200" y1="125" x2="180" y2="112"/>
+    <line x1="200" y1="125" x2="220" y2="112"/>
+    <line x1="200" y1="125" x2="170" y2="125"/>
+    <line x1="200" y1="125" x2="230" y2="125"/>
+    <line x1="200" y1="125" x2="183" y2="138"/>
+    <line x1="200" y1="125" x2="217" y2="138"/>
+  </g>
+  <circle cx="200" cy="125" r="5" fill="#D4AF37"/>
+  <!-- Hindi text इंदौरी -->
+  <text x="200" y="240" text-anchor="middle" font-family="'Tiro Devanagari Hindi', serif" font-size="80" font-weight="900" fill="#D4AF37">इंदौरी</text>
+  <!-- Banner with SARAFA -->
+  <rect x="80" y="290" width="240" height="50" fill="#D4AF37"/>
+  <line x1="50" y1="300" x2="80" y2="300" stroke="#D4AF37" stroke-width="3"/>
+  <line x1="50" y1="330" x2="80" y2="330" stroke="#D4AF37" stroke-width="3"/>
+  <line x1="320" y1="300" x2="350" y2="300" stroke="#D4AF37" stroke-width="3"/>
+  <line x1="320" y1="330" x2="350" y2="330" stroke="#D4AF37" stroke-width="3"/>
+  <text x="200" y="325" text-anchor="middle" font-family="'Playfair Display', serif" font-size="32" font-weight="900" fill="#5C2C06" letter-spacing="6">SARAFA</text>
+</svg>

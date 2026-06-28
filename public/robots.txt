@@ -1,0 +1,4 @@
+Allow: /
+Disallow: /thank-you
+
+Sitemap: https://indorisarafa.com/sitemap.xml
