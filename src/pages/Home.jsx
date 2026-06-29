@@ -144,19 +144,23 @@ const Home = () => {
               transition={{ delay: 0.6 }}
               className="mt-10 flex flex-wrap gap-4"
             >
-              <Link to="/menu" className="btn-gold" data-testid="hero-view-menu">
+              <Link
+                to="/menu"
+                className="btn-gold text-sm px-4 py-2 md:text-base md:px-5 md:py-3"
+                data-testid="hero-view-menu"
+              >
                 View Menu <FiArrowUpRight />
               </Link>
               <Link
                 to="/branches"
-                className="btn-outline-gold"
+                className="btn-outline-gold text-sm px-4 py-2 md:text-base md:px-5 md:py-3"
                 data-testid="hero-visit-branch"
               >
                 <FiMapPin /> Visit Branch
               </Link>
               <a
                 href={`tel:${site.phone}`}
-                className="btn-outline-gold"
+                className="btn-outline-gold text-sm px-4 py-2 md:text-base md:px-5 md:py-3"
                 data-testid="hero-call-now"
               >
                 <FiPhone /> Call Now
