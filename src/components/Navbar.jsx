@@ -96,9 +96,9 @@ const Navbar = () => {
                   {item.label}
                 </NavLink>
               ))}
-              <a href={`tel:${site.phone}`} className="btn-gold mt-3 justify-center">
+              {/* <a href={`tel:${site.phone}`} className="btn-gold mt-3 justify-center">
                 <FiPhone /> {site.phoneDisplay}
-              </a>
+              </a> */}
             </div>
           </motion.div>
         )}
