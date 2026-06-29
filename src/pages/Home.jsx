@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiArrowUpRight, FiPhone, FiMapPin, FiStar } from "react-icons/fi";
-import SEO from "./components/SEO";
-import FloatingSpices, { SteamPlume } from "./components/FloatingSpices";
-import menu from "./data/menu";
-import branches from "./data/branches";
-import reviews from "./data/reviews";
-import gallery from "./data/gallery";
-import site from "./data/site";
+import SEO from "../components/SEO";
+import FloatingSpices, { SteamPlume } from "../components/FloatingSpices";
+import menu from "../data/menu";
+import branches from "../data/branches";
+import reviews from "../data/reviews";
+import gallery from "../data/gallery";
+import site from "../data/site";
 
 const popularDishes = menu.filter((m) => m.popular).slice(0, 8);
 

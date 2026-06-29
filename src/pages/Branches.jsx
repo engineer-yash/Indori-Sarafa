@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { FiPhone, FiMapPin, FiClock } from "react-icons/fi";
-import SEO from "./components/SEO";
-import branches from "./data/branches";
-import site from "./data/site";
+import SEO from "../components/SEO";
+import branches from "../data/branches";
+import site from "../data/site";
 
 const BranchesPage = () => {
   return (
