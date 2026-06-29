@@ -99,7 +99,7 @@ const Home = () => {
         <SteamPlume left="68%" />
         <SteamPlume left="78%" />
 
-        <div className="relative max-w-7xl mx-auto px-5 md:px-10 pt-32 pb-20 grid lg:grid-cols-12 gap-10 items-center w-full">
+        <div className="relative max-w-7xl mx-auto px-5 md:px-10 pt-32 pb-28 md:pb-20 grid lg:grid-cols-12 gap-10 items-center w-full">
           <div className="lg:col-span-7 text-[#FFF8F2]">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
