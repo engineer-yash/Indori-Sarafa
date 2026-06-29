@@ -29,7 +29,7 @@ const Navbar = () => {
       data-testid="navbar"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         isTransparent ? "bg-transparent"
-          : "bg-[#FFF8F2]/85 backdrop-blur-xl border-b border-[#5C2C06]/10 shadow-[0_8px_30px_-12px_rgba(92,44,6,0.15)]"
+          : "bg-white"
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-20 flex items-center justify-between">
