@@ -46,7 +46,6 @@ const MenuModal = ({ item, onClose }) => {
                 <span className="font-display text-4xl font-extrabold gold-text-gradient">₹{item.price}</span>
                 <span className="text-xs text-[#5C2C06]/55 pb-2">per plate</span>
               </div>
-              <a href="tel:+919545637022" className="btn-gold justify-center mt-3">Visit the Restaurant</a>
             </div>
           </motion.div>
         </motion.div>

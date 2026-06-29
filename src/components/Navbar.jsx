@@ -34,7 +34,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-5 md:px-10 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group" aria-label="Indori Sarafa Home">
-          <Logo size={56} variant={isTransparent ? "dark" : "primary"} />
+          <Logo size={60} variant={"primary"} />
           <div className="hidden sm:flex flex-col leading-tight">
             <span className={`font-display text-xl font-extrabold tracking-tight ${isTransparent ? "text-white" : "text-[#5C2C06]"}`}>Indori Sarafa</span>
             <span className={`text-[10px] uppercase tracking-[0.25em] ${isTransparent ? "text-[#D4AF37]" : "text-[#A52A2A]"}`}>Since 2019</span>
