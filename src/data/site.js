@@ -15,7 +15,7 @@ const site = {
   postal: "411057",
   geo: { lat: "18.5912", lon: "73.7389" },
   social: {
-    instagram: "https://instagram.com/indorisarafa",
+    instagram: "https://instagram.com/indorisarafa_",
     facebook: "https://facebook.com/indorisarafa",
   },
 };
