@@ -1,6 +1,6 @@
 import React from "react";
 
-const Logo = ({ size = 60, variant = "primary" }) => (
+const Logo = ({ size = 70, variant = "primary" }) => (
   <img
     src={"/images/logo/main-logo.png"}
     alt="Indori Sarafa Logo"

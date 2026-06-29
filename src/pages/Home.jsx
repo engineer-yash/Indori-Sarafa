@@ -142,7 +142,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="mt-10 flex flex-wrap gap-4"
+              className="mt-10 flex flex-col sm:flex-row sm:flex-wrap gap-4"
             >
               <Link
                 to="/menu"
@@ -171,7 +171,7 @@ const Home = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9 }}
-              className="mt-12 flex items-center gap-6 text-sm"
+              className="mt-16 flex flex-col sm:flex-row items-center gap-6 text-sm"
             >
               <div className="flex items-center gap-1 text-[#D4AF37]">
                 {[...Array(5)].map((_, i) => (
