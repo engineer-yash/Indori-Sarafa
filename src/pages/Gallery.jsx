@@ -38,7 +38,7 @@ const GalleryPage = () => {
             Gallery
           </span>
           <h1 className="!text-[#FFF8F2] font-display text-5xl md:text-7xl font-extrabold mt-4">
-            Every plate is a <span className="gold-text-gradient">portrait</span>.
+            Every plate is a <span className="gold-text-gradient">portrait</span>
           </h1>
         </div>
       </section>
