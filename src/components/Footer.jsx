@@ -60,6 +60,7 @@ const Footer = () => (
     <div className="border-t border-[#D4AF37]/15">
       <div className="max-w-7xl mx-auto px-5 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#FFF8F2]/65">
         <p>© {new Date().getFullYear()} Indori Sarafa. All rights reserved.</p>
+        <p>Designed & Developed by <a href="https://ygwebstudio.vercel.app" target="_blank" rel="noreferrer" className="text-[#D4AF37] hover:text-[#FFD700]">YG Web Studio</a></p>
       </div>
     </div>
   </footer>
