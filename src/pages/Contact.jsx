@@ -42,7 +42,7 @@ const Contact = () => {
             Contact Us
           </span>
           <h1 className="!text-[#FFF8F2] font-display text-5xl md:text-7xl font-extrabold mt-4">
-            Say <span className="gold-text-gradient">namaste</span>.
+            Say <span className="gold-text-gradient">namaste</span>
           </h1>
         </div>
       </section>
