@@ -78,7 +78,9 @@ const BranchesPage = () => {
                 </div>
                 <div className="flex gap-3 items-center">
                   <FiClock className="text-[#D4AF37]" />
-                  <span>Open daily · {site.hours}</span>
+                  <span>
+                    Open daily · {b.id === "branch-2" ? site.hours2 : site.hours}
+                  </span>
                 </div>
               </div>
               <div className="flex flex-wrap gap-3 mt-6">

@@ -7,6 +7,7 @@ const site = {
   phoneDisplay: "+91 95456 37022",
   whatsapp: "919545637022",
   hours: "4:30 AM – 10:00 PM",
+  hours2: "7:00 AM – 9:30 PM",
   url: "https://indorisarafa.com",
   ogImage: "/images/logo/og-image.svg",
   city: "Pune",
