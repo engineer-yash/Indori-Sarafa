@@ -57,7 +57,7 @@ const About = () => {
             Our Story
           </span>
           <h1 className="!text-[#FFF8F2] font-display text-5xl md:text-7xl font-extrabold mt-4 leading-[1.05]">
-            From the bylanes of <span className="gold-text-gradient">Sarafa Bazaar</span> to your plate.
+            From the bylanes of <span className="gold-text-gradient">Sarafa Bazaar</span> to your plate
           </h1>
           <p className="font-hindi text-xl md:text-2xl text-[#D4AF37] mt-6">
             "स्वाद इंदौर की गलियों से"
