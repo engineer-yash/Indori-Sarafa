@@ -97,15 +97,15 @@ const MenuPage = () => {
         className="sticky top-20 z-30 bg-[#FFF8F2]/95 backdrop-blur-xl border-b border-[#5C2C06]/10"
         data-testid="menu-filters"
       >
-        <div className="max-w-7xl mx-auto px-5 md:px-10 py-4 flex flex-col md:flex-row gap-4 items-stretch md:items-center">
-          <div className="relative flex-1">
+        <div className="max-w-7xl mx-auto px-5 md:px-10 py-4 flex flex-row items-center gap-4">
+          <div className="relative flex-1 min-w-0">
             <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-[#5C2C06]/50" />
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search dishes..."
-              className="w-full pl-11 pr-10 py-3 rounded-full bg-white border border-[#5C2C06]/15 focus:border-[#D4AF37] outline-none text-sm"
+              className="w-full pl-11 pr-12 py-4 rounded-full bg-white border border-[#5C2C06]/15 focus:border-[#D4AF37] outline-none text-sm"
               data-testid="menu-search"
             />
             {query && (
@@ -122,7 +122,7 @@ const MenuPage = () => {
           <button
             type="button"
             onClick={() => setPopularOnly((v) => !v)}
-            className={`inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-colors ${
+            className={`inline-flex flex-shrink-0 items-center gap-2 px-5 py-4 rounded-full text-sm font-medium transition-colors shadow-sm ${
               popularOnly
                 ? "bg-[#A52A2A] text-[#FFF8F2]"
                 : "bg-white border border-[#5C2C06]/15 text-[#5C2C06]"
