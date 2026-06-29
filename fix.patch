@@ -1,0 +1,211 @@
+diff --git a/src/components/Footer.jsx b/src/components/Footer.jsx
+--- a/src/components/Footer.jsx
++++ b/src/components/Footer.jsx
+@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
+ import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
+ import { FiPhone, FiMapPin, FiClock } from "react-icons/fi";
+ import Logo from "./Logo";
+-import site from "./data/site";
+-import branches from "./data/branches";
++import site from "../data/site";
++import branches from "../data/branches";
+ 
+ const Footer = () => {
+   return (
+diff --git a/src/components/MenuModel.jsx b/src/components/MenuModal.jsx
+similarity index 100%
+rename from src/components/MenuModel.jsx
+rename to src/components/MenuModal.jsx
+diff --git a/src/components/Navbar.jsx b/src/components/Navbar.jsx
+--- a/src/components/Navbar.jsx
++++ b/src/components/Navbar.jsx
+@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
+ import { motion, AnimatePresence } from "framer-motion";
+ import { FiMenu, FiX, FiPhone } from "react-icons/fi";
+ import Logo from "./Logo";
+-import site from "./data/site";
++import site from "../data/site";
+ 
+ const navItems = [
+   { to: "/", label: "Home" },
+diff --git a/src/components/SEO.jsx b/src/components/SEO.jsx
+--- a/src/components/SEO.jsx
++++ b/src/components/SEO.jsx
+@@ -1,5 +1,5 @@
+ import { Helmet } from "react-helmet-async";
+-import site from "./data/site";
++import site from "../data/site";
+ 
+ const SEO = ({
+   title,
+diff --git a/src/pages/About.jsx b/src/pages/About.jsx
+--- a/src/pages/About.jsx
++++ b/src/pages/About.jsx
+@@ -1,6 +1,6 @@
+ import { motion } from "framer-motion";
+-import SEO from "./components/SEO";
+-import site from "./data/site";
++import SEO from "../components/SEO";
++import site from "../data/site";
+ 
+ const timeline = [
+   {
+diff --git a/src/pages/Branches.jsx b/src/pages/Branches.jsx
+--- a/src/pages/Branches.jsx
++++ b/src/pages/Branches.jsx
+@@ -1,8 +1,8 @@
+ import { motion } from "framer-motion";
+ import { FiPhone, FiMapPin, FiClock } from "react-icons/fi";
+-import SEO from "./components/SEO";
+-import branches from "./data/branches";
+-import site from "./data/site";
++import SEO from "../components/SEO";
++import branches from "../data/branches";
++import site from "../data/site";
+ 
+ const BranchesPage = () => {
+   return (
+diff --git a/src/pages/Contact.jsx b/src/pages/Contact.jsx
+--- a/src/pages/Contact.jsx
++++ b/src/pages/Contact.jsx
+@@ -3,8 +3,8 @@ import { toast } from "sonner";
+ import { motion } from "framer-motion";
+ import { FaWhatsapp } from "react-icons/fa";
+ import { FiPhone, FiMapPin, FiSend } from "react-icons/fi";
+-import SEO from "./components/SEO";
+-import site from "./data/site";
++import SEO from "../components/SEO";
++import site from "../data/site";
+ 
+ const Contact = () => {
+   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+diff --git a/src/pages/Gallery.jsx b/src/pages/Gallery.jsx
+--- a/src/pages/Gallery.jsx
++++ b/src/pages/Gallery.jsx
+@@ -3,9 +3,9 @@ import Lightbox from "yet-another-react-lightbox";
+ import Zoom from "yet-another-react-lightbox/plugins/zoom";
+ import "yet-another-react-lightbox/styles.css";
+ import { motion } from "framer-motion";
+-import SEO from "./components/SEO";
+-import gallery from "./data/gallery";
+-import site from "./data/site";
++import SEO from "../components/SEO";
++import gallery from "../data/gallery";
++import site from "../data/site";
+ 
+ const GalleryPage = () => {
+   const [index, setIndex] = useState(-1);
+diff --git a/src/pages/Home.jsx b/src/pages/Home.jsx
+--- a/src/pages/Home.jsx
++++ b/src/pages/Home.jsx
+@@ -1,13 +1,13 @@
+ import { Link } from "react-router-dom";
+ import { motion } from "framer-motion";
+ import { FiArrowUpRight, FiPhone, FiMapPin, FiStar } from "react-icons/fi";
+-import SEO from "./components/SEO";
+-import FloatingSpices, { SteamPlume } from "./components/FloatingSpices";
+-import menu from "./data/menu";
+-import branches from "./data/branches";
+-import reviews from "./data/reviews";
+-import gallery from "./data/gallery";
+-import site from "./data/site";
++import SEO from "../components/SEO";
++import FloatingSpices, { SteamPlume } from "../components/FloatingSpices";
++import menu from "../data/menu";
++import branches from "../data/branches";
++import reviews from "../data/reviews";
++import gallery from "../data/gallery";
++import site from "../data/site";
+ 
+ const popularDishes = menu.filter((m) => m.popular).slice(0, 8);
+ 
+diff --git a/src/pages/Legal.jsx b/src/pages/Legal.jsx
+--- a/src/pages/Legal.jsx
++++ b/src/pages/Legal.jsx
+@@ -1,4 +1,4 @@
+-import SEO from "./components/SEO";
++import SEO from "../components/SEO";
+ 
+ const LegalPage = ({ title, children, path }) => (
+   <>
+diff --git a/src/pages/Menu.jsx b/src/pages/Menu.jsx
+--- a/src/pages/Menu.jsx
++++ b/src/pages/Menu.jsx
+@@ -1,10 +1,10 @@
+ import { useMemo, useState } from "react";
+ import { motion } from "framer-motion";
+ import { FiSearch, FiStar, FiX } from "react-icons/fi";
+-import SEO from "./components/SEO";
+-import MenuModal from "./components/MenuModal";
+-import menu, { categories } from "./data/menu";
+-import site from "./data/site";
++import SEO from "../components/SEO";
++import MenuModal from "../components/MenuModal";
++import menu, { categories } from "../data/menu";
++import site from "../data/site";
+ 
+ const MenuPage = () => {
+   const [query, setQuery] = useState("");
+diff --git a/src/pages/NotFound.jsx b/src/pages/NotFound.jsx
+--- a/src/pages/NotFound.jsx
++++ b/src/pages/NotFound.jsx
+@@ -1,5 +1,5 @@
+ import { Link } from "react-router-dom";
+-import SEO from "./components/SEO";
++import SEO from "../components/SEO";
+ 
+ const NotFound = () => (
+   <>
+diff --git a/tailwind.config.js b/tailwind.config.js
+--- a/tailwind.config.js
++++ b/tailwind.config.js
+@@ -1,3 +1,5 @@
++import tailwindcssAnimate from "tailwindcss-animate";
++
+ /** @type {import('tailwindcss').Config} */
+ export default {
+   darkMode: ["class"],
+@@ -39,5 +41,5 @@ export default {
+       },
+     },
+   },
+-  plugins: [require("tailwindcss-animate")],
++  plugins: [tailwindcssAnimate],
+ };
+diff --git a/vercel.json b/vercel.json
+--- a/vercel.json
++++ b/vercel.json
+@@ -1,3 +1,5 @@
+ {
+-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
++  "rewrites": [
++    { "source": "/(.*)", "destination": "/index.html" }
++  ]
+ }
+diff --git a/vite.configg.js b/vite.config.js
+similarity index 71%
+rename from vite.configg.js
+rename to vite.config.js
+--- a/vite.configg.js
++++ b/vite.config.js
+@@ -1,6 +1,9 @@
+ import { defineConfig } from "vite";
+ import react from "@vitejs/plugin-react";
+ import path from "path";
++import { fileURLToPath } from "url";
++
++const __dirname = path.dirname(fileURLToPath(import.meta.url));
+ 
+ export default defineConfig({
+   plugins: [react()],
+@@ -11,9 +14,5 @@ export default defineConfig({
+   },
+   server: {
+     port: 3000,
+-    open: true,
+-    open: true,
+-  },
+-  build: {
+-    outDir: "build",
+   },
+ });
