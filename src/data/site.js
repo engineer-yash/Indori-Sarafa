@@ -2,8 +2,7 @@ const site = {
   name: "Indori Sarafa",
   tagline: "Since 2019",
   hindiTagline: "स्वाद इंदौर की गलियों से",
-  description:
-    "Authentic Indori street food restaurant in Hinjawadi, Pune. Famous for Poha, Jalebi, Kachori, Garadu and more — since 2019.",
+  description: "Authentic Indori street food restaurant in Hinjawadi, Pune. Famous for Poha, Jalebi, Kachori, Garadu and more — since 2019.",
   phone: "+919545637022",
   phoneDisplay: "+91 95456 37022",
   whatsapp: "919545637022",
@@ -20,5 +19,4 @@ const site = {
     facebook: "https://facebook.com/indorisarafa",
   },
 };
-
 export default site;

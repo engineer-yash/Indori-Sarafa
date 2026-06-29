@@ -21,12 +21,8 @@ export default {
         popover: { DEFAULT: "hsl(var(--popover))", foreground: "hsl(var(--popover-foreground))" },
         card: { DEFAULT: "hsl(var(--card))", foreground: "hsl(var(--card-foreground))" },
         brand: {
-          primary: "#5C2C06",
-          secondary: "#A52A2A",
-          gold: "#D4AF37",
-          bg: "#FFF8F2",
-          dark: "#222222",
-          text: "#444444",
+          primary: "#5C2C06", secondary: "#A52A2A", gold: "#D4AF37",
+          bg: "#FFF8F2", dark: "#222222", text: "#444444",
         },
       },
       borderRadius: {
@@ -35,7 +31,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        display: ["Playfair Display", "serif"],
+        display: ['"Playfair Display"', "serif"],
         body: ["Poppins", "system-ui", "sans-serif"],
         hindi: ['"Tiro Devanagari Hindi"', "serif"],
       },

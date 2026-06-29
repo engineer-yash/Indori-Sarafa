@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const FloatingSpices = () => {
   const spices = Array.from({ length: 18 });
   return (
@@ -15,8 +13,7 @@ const FloatingSpices = () => {
             style={{
               left: `${Math.random() * 100}%`,
               top: `-${Math.random() * 20}%`,
-              width: `${size}px`,
-              height: `${size}px`,
+              width: `${size}px`, height: `${size}px`,
               backgroundColor: color,
               animationDuration: `${12 + Math.random() * 14}s`,
               animationDelay: `${Math.random() * 8}s`,
@@ -30,19 +27,9 @@ const FloatingSpices = () => {
 };
 
 export const SteamPlume = ({ left = "50%" }) => (
-  <div
-    className="absolute pointer-events-none"
-    style={{ left, bottom: 0, height: 200, width: 60 }}
-  >
+  <div className="absolute pointer-events-none" style={{ left, bottom: 0, height: 200, width: 60 }}>
     {[0, 0.6, 1.2, 1.8].map((delay, i) => (
-      <span
-        key={i}
-        className="steam"
-        style={{
-          left: `${10 + i * 8}px`,
-          animationDelay: `${delay}s`,
-        }}
-      />
+      <span key={i} className="steam" style={{ left: `${10 + i * 8}px`, animationDelay: `${delay}s` }} />
     ))}
   </div>
 );
