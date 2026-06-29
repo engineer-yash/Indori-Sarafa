@@ -127,7 +127,7 @@ const Home = () => {
               transition={{ duration: 0.7, delay: 0.25 }}
               className="font-hindi mt-6 text-2xl md:text-3xl text-[#D4AF37]"
             >
-              \"स्वाद इंदौर की गलियों से\"
+              "स्वाद इंदौर की गलियों से"
             </motion.p>
             <motion.p
               initial={{ opacity: 0 }}

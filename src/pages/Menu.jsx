@@ -84,7 +84,7 @@ const MenuPage = () => {
             Our Menu
           </span>
           <h1 className="!text-[#FFF8F2] font-display text-5xl md:text-7xl font-extrabold mt-4">
-            Made fresh, served with <span className="gold-text-gradient italic">love</span>.
+            Made fresh, served with <span className="gold-text-gradient">love</span>.
           </h1>
           <p className="font-hindi text-xl text-[#D4AF37] mt-4">
             "स्वाद इंदौर की गलियों से"
