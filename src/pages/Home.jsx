@@ -179,7 +179,7 @@ const Home = () => {
                 ))}
               </div>
               <span className="text-[#FFF8F2]/80">
-                4.8 · 650+ Google reviews
+                4.0 · 700+ Google reviews
               </span>
             </motion.div>
           </div>
